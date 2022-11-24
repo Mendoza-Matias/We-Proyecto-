@@ -1,0 +1,74 @@
+/*Navegación*/
+.logo{
+    height: 80px;
+    width: 80px;
+}
+.nav-color{
+    height: 6rem;
+    font-size: 1.5rem;
+}
+/*BIENVENIDO*/
+.bienvenido,
+.carreras{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.bienvenido article{
+    text-align: center;
+    width: 500px;
+}
+
+/*Carreras*/
+.carreras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+.carreras article{
+    text-align: center;
+}
+.img-carreras:hover{
+    box-shadow: 0px 2px 5px black;
+}
+.card-body h2{
+    font-size: 1.5rem;
+}
+.card{
+    height: 100%;
+}
+
+/*CARRUSEL*/
+.carrusel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+.carrusel img{
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px black;
+    height: 450px;
+    width: 800px;
+}
+/*INFORMACION*/
+.informacion article{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 500px;
+}
+.informacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+}
