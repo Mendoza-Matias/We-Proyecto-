@@ -27,18 +27,24 @@ body{
 .nav-color{
     height: 6rem;
     font-size: 1.5rem;
+    font-family:'Simonetta', cursive;
+    background-image: linear-gradient(to bottom,var(--colorCuatro),var(--colorTres));
+}
+.nav-link{
+    color: var(--colorSeis);
+    text-shadow: 0px 0px 5px var(--colorTres);
 }
 /*BIENVENIDO*/
 .presentacion{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 5rem;
     height: 60rem;
     margin-bottom: 2rem;
     background-image:linear-gradient(to top,var(--colorDos),var(--colorUno));
     font-family:'Simonetta', cursive;
-    font-size:30px;
+    font-size:20px;
     text-shadow: 0px 0px 10px var(--colorTres);
 }
 .presentacion article{
@@ -47,8 +53,8 @@ body{
 }
 .presentacion img{
     border-radius: 2rem;
-    height: 35rem;
-    width: 45rem;
+    height: 25rem;
+    width: 35rem;
     box-shadow: 0px 0px 10px var(--colorCinco);
 }
 .presentacion button{
@@ -109,11 +115,12 @@ body{
 .informacion article{
     margin-top: 3rem;
     width: 50rem;
-    height: 15rem;
-    margin-bottom: 10rem;
+    height: 12rem;
+    margin-bottom: 5rem;
     border: 1px solid;
     border-radius: 2rem;
     box-shadow: 0px 2px 10px black;
+    background: var(--colorTres);
 }
 .informacion{
     display: flex;
@@ -123,7 +130,7 @@ body{
     gap: 1.5rem;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 20px;
 }
 /*TECNOLOGIA*/
 .tecnologia{
@@ -132,38 +139,67 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    gap: 20rem;
     margin-bottom: 2rem;
     font-family:'Simonetta', cursive;
-    font-size:22px;
+    font-size:17px;
     text-shadow: 0px 5px 10px var(--colorTres);
+    border-bottom: 1px solid black;
 }
 .tecnologia article{
     text-align: center;
-    width: 50rem;
+    width: 35rem;
+    margin-bottom: 2rem;
+
 }
 .tecnologia img{
     border-radius: 2rem;
     height: 20rem;
-    width: 30rem;
+    width: 25rem;
     box-shadow: 0px 0px 10px var(--colorCinco);
 }
 /*BOTON*/
-.contacto{
+.button-aline{
     display: flex;
     justify-content: center;
-    margin-bottom: 10rem;
+    gap:2rem;
+    margin:10rem;
 }
-.contacto button{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    width: 15rem;
-    height: 5rem;
-    border-radius: 2rem;
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
 }
-.contacto button:hover{
-    background: greenyellow;
-    transition: all 1s ease-in;
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.mr-3{
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+.newbutton{
+    background-color: var(--colorUno);
+    border: none;
+    width: 10rem;
+    text-align: center;
+}
+.newbutton a{
+    color: var(--colorSeis);
+}
+.newbutton:hover{
+    background: var(--colorDos);
 }
 /*PIE*/
 .pie{
@@ -228,4 +264,9 @@ body{
     width: 25rem;
     box-shadow: 0px 0px 10px var(--colorCinco);
 }
+    .informacion article{
+        height: 16rem;
+    }
 }
+
+
