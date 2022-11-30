@@ -16,3 +16,6 @@ slider.src = imagenes[indices]
 }
 setInterval(cambio, 2000);
 //CARTA
+
+//------------CONVERIR DATOS DE FORMULARIO
+

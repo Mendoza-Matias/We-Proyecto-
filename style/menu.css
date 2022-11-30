@@ -6,8 +6,9 @@ body{
 }
 .titulos{
     font-family:'Simonetta', cursive;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 /*VARIABLES*/
 :root{
@@ -39,9 +40,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
     height: 60rem;
-    margin-bottom: 2rem;
     background-image:linear-gradient(to top,var(--colorDos),var(--colorUno));
     font-family:'Simonetta', cursive;
     font-size:20px;
@@ -88,10 +88,17 @@ body{
 .img-carreras:hover{
     box-shadow: 0px 2px 5px black;
 }
+
 .card-body h2{
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
+}
+.carreras-presentacion{
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Simonetta';
 }
 
 /*CARRUSEL*/
@@ -115,7 +122,7 @@ body{
 .informacion article{
     margin-top: 3rem;
     width: 50rem;
-    height: 12rem;
+    height: 14rem;
     margin-bottom: 5rem;
     border: 1px solid;
     border-radius: 2rem;
@@ -141,7 +148,7 @@ body{
     flex-direction: row-reverse;
     margin-bottom: 2rem;
     font-family:'Simonetta', cursive;
-    font-size:17px;
+    font-size:25px;
     text-shadow: 0px 5px 10px var(--colorTres);
     border-bottom: 1px solid black;
 }
@@ -171,8 +178,8 @@ body{
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
+	font-family:'Simonetta', cursive;;
+	font-size:25px;
 	padding:16px 31px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
@@ -190,29 +197,51 @@ body{
     margin-right: 0.5rem;
 }
 .newbutton{
-    background-color: var(--colorUno);
+    background-color: var(--colorCinco);
     border: none;
     width: 10rem;
+    display: flex;
+    align-items: flex-end;
     text-align: center;
 }
 .newbutton a{
-    color: var(--colorSeis);
+    color: var(--colorTres);
+    font-family:'Simonetta', cursive;
+    font-size: 25px;
 }
 .newbutton:hover{
     background: var(--colorDos);
+    transition: all 1s ease-in;
 }
 /*PIE*/
 .pie{
     display: flex;
+    gap: 2rem;
     justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: var(--colorDos);
+    height: 35rem;
+    box-shadow: 0px 0px 5px var(--colorSeis);
+    width: 50%;
 }
 .pie form {
     display: flex;
+    justify-content: center;
+    gap: 2rem;
     flex-direction: column;
 }
 .pie input{
-    width: 25rem;
+    width: 22rem;
     height: 4rem;
+}
+.pie img{
+    height: 25rem;
+    width: 25rem;
 }
 /*MEDIA*/
 @media screen and (max-width:430px) {
@@ -226,7 +255,7 @@ body{
         margin-bottom: 5rem;
         background-image:linear-gradient(to top,var(--colorDos),var(--colorUno));
         font-family:'Simonetta', cursive;
-        font-size:px;
+        font-size:20px;
         text-shadow: 0px 0px 10px var(--colorTres);
     }
     .presentacion img{
@@ -241,8 +270,8 @@ body{
         border-radius: 2rem;
         border: 2px solid black;
         box-shadow: 0px 0px 5px black;
-        height: 300px;
-        width: 400px;
+        height: 15rem;
+        width: 20rem;
     }
     /*TECNOLOGIA*/
     .tecnologia{
@@ -252,7 +281,7 @@ body{
     flex-direction: row-reverse;
     flex-wrap: wrap;
     font-family:'Simonetta', cursive;
-    font-size:20px;
+    font-size:18px;
     text-shadow: 0px 5px 10px var(--colorTres);
     }
     .tecnologia article{
@@ -261,12 +290,27 @@ body{
     .tecnologia img{
     border-radius: 2rem;
     height: 15rem;
-    width: 25rem;
+    width: 20rem;
     box-shadow: 0px 0px 10px var(--colorCinco);
 }
     .informacion article{
-        height: 16rem;
+        height: 100%;
+        width: 20rem;
     }
+    .nav-color{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .pie img{
+        height: 15rem;
+        width: 15rem;
+    }
+    .pie{
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
 
