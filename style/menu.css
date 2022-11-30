@@ -295,7 +295,6 @@ body{
 }
     .informacion article{
         height: 100%;
-        width: 20rem;
     }
     .nav-color{
         display: flex;
@@ -312,5 +311,19 @@ body{
     }
 
 }
-
+@media screen and (max-width:1200px) {
+    .presentacion img{
+        border-radius: 2rem;
+        height: 20rem;
+        width: 25rem;
+        box-shadow: 0px 0px 10px var(--colorCinco);
+    }
+    .pie{
+        height: 100%;
+        width: 100%;
+    }
+    .tecnologia{
+        
+    }
+}
 
