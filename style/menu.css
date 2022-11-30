@@ -240,8 +240,8 @@ body{
     height: 4rem;
 }
 .pie img{
-    height: 25rem;
-    width: 25rem;
+    height: 15rem;
+    width: 15rem;
 }
 /*MEDIA*/
 @media screen and (max-width:430px) {

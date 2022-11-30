@@ -17,5 +17,18 @@ slider.src = imagenes[indices]
 setInterval(cambio, 2000);
 //CARTA
 
-//------------CONVERIR DATOS DE FORMULARIO
+//------------CONVERIR DATOS DE FORMULARIO-------------
 
+const nombre = document.getElementById('nombre');
+const correo = document.getElementById('correo');
+const comentario = document.getElementById('comentario');
+const boton = document.getElementById('boton');
+
+boton.addEventListener('click',enviar=()=>{
+    let datos = {
+        user : nombre.value,
+        mail : correo.value,
+        coment : comentario.value
+    }
+    console.log(datos);
+})
