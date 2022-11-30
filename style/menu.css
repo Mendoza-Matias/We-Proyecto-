@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Simonetta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Simonetta&display=swap');
 body{
-    background-image: linear-gradient(to top,var(--colorCuatro),var(--colorTres));
+    background-image: linear-gradient(to top,var(--colorUno),var(--colorDos));
 }
 .titulos{
     font-family:'Simonetta', cursive;
-    font-size: 2.5rem;
+    font-size: 50px;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -20,42 +20,52 @@ body{
     --colorSeis:#000000;
     --borde:1px solid black;
 }
-/*Navegación*/
-.logo{
-    height: 80px;
-    width: 80px;
+/*Navegación-------------------------------------------*/
+.nav{
+    display: flex;
+    align-items: center;
+    height: 5.5rem;
+    font-size: 25px;
+    font-family: 'Simonetta';
+    background-image:linear-gradient(to right,var(--colorCuatro),var(--colorTres));
+    gap: 3rem;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 2px var(--colorSeis);
+    z-index: 1;
 }
-.nav-color{
-    height: 6rem;
-    font-size: 1.5rem;
-    font-family:'Simonetta', cursive;
-    background-image: linear-gradient(to bottom,var(--colorCuatro),var(--colorTres));
-}
-.nav-link{
+.nav a{
+    text-decoration: none;
     color: var(--colorSeis);
-    text-shadow: 0px 0px 5px var(--colorTres);
 }
-/*BIENVENIDO*/
+.nav img{
+    position: relative;
+    left: 2rem;
+    height: 5rem;
+}
+
+
+/*BIENVENIDO---------------------------------------------*/
+.opacidad{
+    opacity: 0.9;
+}
 .presentacion{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    background-image: url(../image/carreras/busca.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 60rem;
-    background-image:linear-gradient(to top,var(--colorDos),var(--colorUno));
-    font-family:'Simonetta', cursive;
-    font-size:20px;
-    text-shadow: 0px 0px 10px var(--colorTres);
-}
-.presentacion article{
+    font-family:'Simonetta';
+    font-weight: bold;
+    font-size:30px;
+    color: var(--colorSeis);
+    text-shadow: 0px 0px 5px var(--colorTres);
     text-align: center;
-    width: 500px;
-}
-.presentacion img{
-    border-radius: 2rem;
-    height: 25rem;
-    width: 35rem;
-    box-shadow: 0px 0px 10px var(--colorCinco);
+    box-shadow: 0px 0px 10px var(--colorSeis);
 }
 .presentacion button{
     height: 5rem;
@@ -63,45 +73,56 @@ body{
     border: transparent;
     border-radius: 2rem;
     font-size: 1.5rem;
-    background-color:var(--colorCuatro) ;
+    background-color:var(--colorTres);
     font-family:'Simonetta';
-    font-style: italic;
+    font-weight: bolder;
     font-size: 25px;
 }
 .presentacion button:hover{
-    background: var(--colorTres) ;
-    transition: all .5s ease-in;
+    color: var(--colorDos);
 }
 
-/*Carreras*/
+/*Carreras-------------------------------------------*/
+.fondo-carreras{
+    height: 100%;
+    width: 60rem;
+    border-radius: 2rem;
+}
 .carreras{
-    margin: 10rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 2rem;
     align-items: center;
-    gap: 1rem;
 }
 .carreras article{
+    margin-top: 2rem;
     text-align: center;
 }
-.img-carreras:hover{
-    box-shadow: 0px 2px 5px black;
+.info-carreras article{
+    background-image: linear-gradient(to left,var(--colorCuatro),var(--colorTres));
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+}
+.info-carreras article:hover{
+    box-shadow: 0px 5px 5px var(--colorSeis);
+}
+.info-carreras img{
+    height: 250px;
+    width: 250px;
+    border-radius: 10rem;
+    box-shadow: 0px 0px 10px var(--colorSeis);
 }
 
-.card-body h2{
-    font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-}
-.carreras-presentacion{
-    margin-top: 10rem;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Simonetta';
+.info-carreras article{
+    border: 1px solid black;
+    border-radius: 2rem;
+    width:
 }
 
-/*CARRUSEL*/
+/*CARRUSEL---------------------------------------------*/
 .carrusel{
     display: flex;
     flex-direction: column;
@@ -121,8 +142,8 @@ body{
 /*INFORMACION*/
 .informacion article{
     margin-top: 3rem;
-    width: 50rem;
-    height: 14rem;
+    width: 35rem;
+    height: 18rem;
     margin-bottom: 5rem;
     border: 1px solid;
     border-radius: 2rem;
@@ -139,32 +160,41 @@ body{
     text-align: center;
     font-size: 20px;
 }
-/*TECNOLOGIA*/
+/*TECNOLOGIA--------------------------------------------------------------*/
+.fondo{
+    background-image:linear-gradient(to bottom,var(--colorCuatro),var(--colorTres)) ;
+    border-radius: 2rem;
+    box-shadow: 0px 10px 5px var(--colorCinco);
+    text-align: center;
+}
 .tecnologia{
     display: flex;
-    margin-top: 5rem;
-    align-items: center;
     justify-content: center;
-    flex-direction: row-reverse;
-    margin-bottom: 2rem;
-    font-family:'Simonetta', cursive;
-    font-size:25px;
-    text-shadow: 0px 5px 10px var(--colorTres);
-    border-bottom: 1px solid black;
+    align-items: center;
 }
 .tecnologia article{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    width: 35rem;
-    margin-bottom: 2rem;
-
+    font-size: 20px;
+    border-radius: 2rem;
 }
 .tecnologia img{
-    border-radius: 2rem;
-    height: 20rem;
-    width: 25rem;
-    box-shadow: 0px 0px 10px var(--colorCinco);
+    height: 200px;
+    width: 300px;
+    border-radius: 250px;
+    box-shadow: 0px 0px 5px var(--colorCinco);
+    margin-bottom: 2rem;
 }
-/*BOTON*/
+.tec-seccion{
+    display: flex;
+    gap: 2rem;
+}
+/*BOTON--------------------------------------------------------------------*/
 .button-aline{
     display: flex;
     justify-content: center;
@@ -238,92 +268,16 @@ body{
 .pie input{
     width: 22rem;
     height: 4rem;
+    border-radius: 2rem;
+    border: transparent;
+    text-align: center;
 }
 .pie img{
     height: 15rem;
     width: 15rem;
 }
-/*MEDIA*/
 @media screen and (max-width:430px) {
-/*BIENVENIDO*/
-    .presentacion{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-        margin-bottom: 5rem;
-        background-image:linear-gradient(to top,var(--colorDos),var(--colorUno));
-        font-family:'Simonetta', cursive;
-        font-size:20px;
-        text-shadow: 0px 0px 10px var(--colorTres);
-    }
-    .presentacion img{
-        border-radius: 2rem;
-        height: 15rem;
-        width: 20rem;
-        box-shadow: 0px 0px 10px var(--colorCinco);
-    }
-    /*CARRUSEL*/
-    .carrusel img{
-        margin-top: 5rem;
-        border-radius: 2rem;
-        border: 2px solid black;
-        box-shadow: 0px 0px 5px black;
-        height: 15rem;
-        width: 20rem;
-    }
-    /*TECNOLOGIA*/
-    .tecnologia{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    font-family:'Simonetta', cursive;
-    font-size:18px;
-    text-shadow: 0px 5px 10px var(--colorTres);
-    }
-    .tecnologia article{
-    text-align: center;
-    }
-    .tecnologia img{
-    border-radius: 2rem;
-    height: 15rem;
-    width: 20rem;
-    box-shadow: 0px 0px 10px var(--colorCinco);
-}
-    .informacion article{
-        height: 100%;
-    }
-    .nav-color{
-        display: flex;
-        flex-direction: column;
-        font-size: 20px;
-    }
-    .pie img{
-        height: 15rem;
-        width: 15rem;
-    }
-    .pie{
-        height: 100%;
-        width: 100%;
-    }
-
-}
-@media screen and (max-width:1200px) {
-    .presentacion img{
-        border-radius: 2rem;
-        height: 20rem;
-        width: 25rem;
-        box-shadow: 0px 0px 10px var(--colorCinco);
-    }
-    .pie{
-        height: 100%;
-        width: 100%;
-    }
-    .tecnologia{
-        
+    .carreras{
     }
 }
 
